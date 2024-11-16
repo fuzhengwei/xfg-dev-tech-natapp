@@ -1,0 +1,10 @@
+version: '3.8'
+# 命令执行 docker-compose -f docker-compose.yml up -d
+# 访问：http://localhost:8080/api/test
+services:
+  xfg-dev-tech-frp-app:
+    image: fuzhengwei/xfg-dev-tech-frp-app:1.0
+    container_name: xfg-dev-tech-frp-app
+    restart: always
+    ports:
+      - "8080:8080"
